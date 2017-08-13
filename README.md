@@ -5,7 +5,7 @@ The point of this mini app is to illustrate how to determine the initial app scr
 
 See AppDelegate.swift and AcceptViewController.swift.
 
-AppDelegate.swift:
+## AppDelegate.swift:
 
 Add 2 variables to keep track of the 2 view controllers we are interested in.
 
@@ -49,7 +49,7 @@ Then decide which view controller to show.
         self.window?.makeKeyAndVisible()
     }
 
-In AcceptViewController.swift
+## In AcceptViewController.swift
 
 If the user presses the accept button, remember that choice and switch to the main view controller.
 
