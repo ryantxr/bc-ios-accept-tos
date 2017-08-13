@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Legendary_Fiesta" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7l6-Wp-CBf">
+                                <rect key="frame" x="148" y="323" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7l6-Wp-CBf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aQg-HB-whz"/>
+                            <constraint firstItem="7l6-Wp-CBf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bta-Rh-fDC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Accept View Controller-->
+        <scene sceneID="CcO-2M-d3H">
+            <objects>
+                <viewController storyboardIdentifier="AcceptView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WHs-Ad-kag" customClass="AcceptViewController" customModule="Legendary_Fiesta" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TFb-MH-011"/>
+                        <viewControllerLayoutGuide type="bottom" id="VQN-t9-kNL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l4r-uN-P3k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bsr-cE-qGV">
+                                <rect key="frame" x="16" y="28" width="343" height="467"/>
+                                <mutableString key="text">Suspendisse tempor et metus ac rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi laoreet consectetur maximus. Integer purus sapien, faucibus lobortis bibendum hendrerit, pharetra eu diam. Aliquam interdum consequat elit, ac maximus diam auctor sit amet. Vivamus vitae purus ut urna tempor malesuada. Ut congue imperdiet lobortis. Donec vestibulum arcu et commodo cursus. Duis tempor dui vel tortor vulputate, at gravida purus gravida. Donec posuere risus arcu, ac egestas ligula imperdiet ac. Suspendisse tortor turpis, laoreet sed feugiat id, dictum vitae sapien. Fusce sed nisi et nisl hendrerit tristique vehicula in diam. Donec dignissim lectus neque, vitae congue turpis aliquet facilisis. Duis ullamcorper ligula vitae vestibulum tempus. Curabitur justo elit, venenatis eget gravida maximus, pretium id metus. Phasellus mattis risus non enim facilisis, ut suscipit est vestibulum.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kS-zM-fRL">
+                                <rect key="frame" x="163" y="503" width="49" height="144"/>
+                                <state key="normal" title="Accept"/>
+                                <connections>
+                                    <action selector="acceptAction:" destination="WHs-Ad-kag" eventType="touchUpInside" id="DAn-Vt-TCb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Bsr-cE-qGV" secondAttribute="trailing" constant="16" id="Ikb-xU-oUr"/>
+                            <constraint firstItem="5kS-zM-fRL" firstAttribute="centerX" secondItem="l4r-uN-P3k" secondAttribute="centerX" id="N3a-Ns-dSA"/>
+                            <constraint firstItem="5kS-zM-fRL" firstAttribute="top" secondItem="Bsr-cE-qGV" secondAttribute="bottom" constant="8" id="Nee-H1-8Jt"/>
+                            <constraint firstItem="Bsr-cE-qGV" firstAttribute="leading" secondItem="l4r-uN-P3k" secondAttribute="leading" constant="16" id="NzH-o9-1hG"/>
+                            <constraint firstItem="Bsr-cE-qGV" firstAttribute="top" secondItem="TFb-MH-011" secondAttribute="bottom" constant="8" id="fJ0-Qh-Fsh"/>
+                            <constraint firstItem="VQN-t9-kNL" firstAttribute="top" secondItem="5kS-zM-fRL" secondAttribute="bottom" constant="20" id="ur5-xY-kff"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TFb-G4-0Ie" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882" y="38"/>
+        </scene>
+    </scenes>
+</document>
